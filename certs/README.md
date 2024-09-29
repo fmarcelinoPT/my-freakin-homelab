@@ -55,6 +55,7 @@ sh ./tools/batchGenerator.sh hera.onemarc.io "PVE - hera.onemarc.io"
 sh ./tools/batchGenerator.sh kronos.onemarc.io "PVE - kronos.onemarc.io"
 sh ./tools/batchGenerator.sh poseidon.onemarc.io "PVE - poseidon.onemarc.io"
 sh ./tools/batchGenerator.sh zeus.onemarc.io "PVE - zeus.onemarc.io"
+sh ./tools/batchGenerator.sh rivendell.onemarc.io "NAS - rivendell.onemarc.io"
 ```
 
 ## Install certificates (Linux)
