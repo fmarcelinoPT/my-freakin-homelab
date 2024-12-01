@@ -184,4 +184,4 @@ Expected result:
 
 ### Author Information
 
-This role was created at 2024 by [fmarcelinoPT](https://github.com/fmarcelinoPT). Feel free to customize or extend the role to fit your needs.
+This project was created at 2024 by [fmarcelinoPT](https://github.com/fmarcelinoPT). Feel free to customize or extend it to fit your needs.
