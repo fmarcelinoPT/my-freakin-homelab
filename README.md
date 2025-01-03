@@ -105,7 +105,7 @@ Login to each server and:
     # Create empty file to set security
     touch /home/ansiblebot/.ssh/authorized_keys
 
-    # ensure the directory ir owned by the new user
+    # ensure the directory is owned by the new user
     chown -R ansiblebot:ansiblebot /home/ansiblebot/.ssh
 
     # make sure only the new user has permissions
@@ -131,7 +131,7 @@ Login to each server and:
     ssh-copy-id -i ~/.ssh/support_rsa ansiblebot@[SERVER_FQDN]
     ```
 
-Now you should be able to login with ssh on each server using `ssh-keys` wuth user `ansiblebot`:
+Now you should be able to login with ssh on each server using `ssh-keys` with user `ansiblebot`:
 
 ```bash
 ssh -i ~/.ssh/support_rsa ansiblebot@hera.onemarc.io
