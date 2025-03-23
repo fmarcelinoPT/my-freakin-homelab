@@ -47,6 +47,16 @@ certutil -f -addstore "ROOT" onemarc-wildcard.crt
 
 ## Setup users and ssh-keys
 
+### Copy existing ssh-keys to local machine
+
+```bash
+cp *rsa* ~/.ssh
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/*
+```
+
+### Copy to remote servers
+
 Setup ssh keys for passwordless authentication.
 
 ```bash
@@ -105,7 +115,7 @@ Login to each server and:
     # Create empty file to set security
     touch /home/ansiblebot/.ssh/authorized_keys
 
-    # ensure the directory ir owned by the new user
+    # ensure the directory is owned by the new user
     chown -R ansiblebot:ansiblebot /home/ansiblebot/.ssh
 
     # make sure only the new user has permissions
@@ -131,7 +141,7 @@ Login to each server and:
     ssh-copy-id -i ~/.ssh/support_rsa ansiblebot@[SERVER_FQDN]
     ```
 
-Now you should be able to login with ssh on each server using `ssh-keys` wuth user `ansiblebot`:
+Now you should be able to login with ssh on each server using `ssh-keys` with user `ansiblebot`:
 
 ```bash
 ssh -i ~/.ssh/support_rsa ansiblebot@hera.onemarc.io
@@ -184,4 +194,4 @@ Expected result:
 
 ### Author Information
 
-This role was created at 2024 by [fmarcelinoPT](https://github.com/fmarcelinoPT). Feel free to customize or extend the role to fit your needs.
+This project was created at 2024 by [fmarcelinoPT](https://github.com/fmarcelinoPT). Feel free to customize or extend it to fit your needs.
