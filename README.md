@@ -47,6 +47,16 @@ certutil -f -addstore "ROOT" onemarc-wildcard.crt
 
 ## Setup users and ssh-keys
 
+### Copy existing ssh-keys to local machine
+
+```bash
+cp *rsa* ~/.ssh
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/*
+```
+
+### Copy to remote servers
+
 Setup ssh keys for passwordless authentication.
 
 ```bash
